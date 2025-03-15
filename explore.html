@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استكشاف - Salam Hack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="explore-styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Salam Hack</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">الرئيسية</a>
+            <a href="explore.html" class="nav-link active">استكشاف</a>
+        </div>
+        <button class="toggle-sidebar" id="openSidebar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="main-container">
+        <div class="sidebar" id="sidebar">
+            <h3 class="sidebar-title">
+                تصفية النتائج
+                <button class="close-sidebar" id="closeSidebar">×</button>
+            </h3>
+            
+            <div class="option-group">
+                <label class="option-label">نوع المحتوى</label>
+                <select class="option-select">
+                    <option value="all" selected>الكل</option>
+                    <option value="educational">تعليمي</option>
+                    <option value="nature">طبيعة</option>
+                    <option value="social">سوشيال ميديا</option>
+                    <option value="cinematic">سينمائي</option>
+                    <option value="animation">رسوم متحركة</option>
+                </select>
+            </div>
+            
+            <div class="option-group">
+                <label class="option-label">المدة</label>
+                <select class="option-select">
+                    <option value="all" selected>الكل</option>
+                    <option value="short">قصير (> 30 ثانية)</option>
+                    <option value="medium">متوسط (30-60 ثانية)</option>
+                    <option value="long">طويل (< 60 ثانية)</option>
+                </select>
+            </div>
+            
+            <div class="option-group">
+                <label class="option-label">الأسلوب</label>
+                <select class="option-select">
+                    <option value="all" selected>الكل</option>
+                    <option value="realistic">واقعي</option>
+                    <option value="cartoon">كرتوني</option>
+                    <option value="3d">ثلاثي الأبعاد</option>
+                    <option value="abstract">تجريدي</option>
+                    <option value="anime">أنمي</option>
+                    <option value="cinematic">سينمائي</option>
+                </select>
+            </div>
+            
+            <div class="option-group">
+                <label class="option-label">الترتيب حسب</label>
+                <select class="option-select">
+                    <option value="newest" selected>الأحدث</option>
+                    <option value="popular">الأكثر شعبية</option>
+                    <option value="trending">الأكثر رواجًا</option>
+                </select>
+            </div>
+            
+            <button class="filter-btn">تطبيق الفلترة</button>
+        </div>
+        
+        <div class="content">
+            <div class="explore-header">
+                <h1 class="explore-title">استكشاف الفيديوهات</h1>
+                <p class="explore-description">اكتشف فيديوهات مميزة تم إنشاؤها بواسطة مستخدمين آخرين أو احصل على أفكار جديدة لمشاريعك.</p>
+            </div>
+            
+            <div class="featured-section">
+                <h2 class="section-title">أبرز الفيديوهات <span class="section-tag">مميز</span></h2>
+                <div class="featured-container">
+                    <div class="featured-video">
+                        <div class="video-thumbnail featured">
+                            <div class="thumbnail-overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                            <div class="video-duration">0:58</div>
+                            <div class="video-quality">HD</div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">رحلة عبر الصحراء العربية مع غروب الشمس</h3>
+                            <div class="video-meta">
+                                <span class="meta-item views">4.2K مشاهدة</span>
+                                <span class="meta-item category">طبيعة</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-video">
+                        <div class="video-thumbnail featured">
+                            <div class="thumbnail-overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                            <div class="video-duration">1:24</div>
+                            <div class="video-quality">4K</div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">العمارة الإسلامية - جولة في المساجد التاريخية</h3>
+                            <div class="video-meta">
+                                <span class="meta-item views">6.8K مشاهدة</span>
+                                <span class="meta-item category">تعليمي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">الفيديوهات المولدة</h2>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="thumbnail-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div class="video-duration">0:38</div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">تقنية النانو - مستقبل التكنولوجيا</h3>
+                        <div class="video-meta">
+                            <span class="meta-item views">1.2K مشاهدة</span>
+                            <span class="meta-item category">تعليمي</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="thumbnail-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div class="video-duration">0:45</div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">شلالات خلابة وسط الغابات الاستوائية</h3>
+                        <div class="video-meta">
+                            <span class="meta-item views">2.4K مشاهدة</span>
+                            <span class="meta-item category">طبيعة</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="thumbnail-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div class="video-duration">1:12</div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">رحلة في الفضاء - كواكب المجموعة الشمسية</h3>
+                        <div class="video-meta">
+                            <span class="meta-item views">3.7K مشاهدة</span>
+                            <span class="meta-item category">تعليمي</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="thumbnail-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div class="video-duration">0:32</div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">إعلان تجاري لمنتج طبيعي</h3>
+                        <div class="video-meta">
+                            <span class="meta-item views">1.8K مشاهدة</span>
+                            <span class="meta-item category">إعلان</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="thumbnail-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div class="video-duration">0:58</div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">فيديو موسيقي - أنغام الشرق</h3>
+                        <div class="video-meta">
+                            <span class="meta-item views">2.9K مشاهدة</span>
+                            <span class="meta-item category">موسيقى</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="thumbnail-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div class="video-duration">1:05</div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">قصة مصورة للأطفال - مغامرات الأرنب الصغير</h3>
+                        <div class="video-meta">
+                            <span class="meta-item views">4.5K مشاهدة</span>
+                            <span class="meta-item category">رسوم متحركة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="load-more-btn">عرض المزيد</button>
+            
+            <div class="ideas-section">
+                <h2 class="section-title">أفكار جديدة للفيديوهات</h2>
+                <div class="ideas-container">
+                    <div class="idea-card">
+                        <div class="idea-icon">🎓</div>
+                        <h3 class="idea-title">محتوى تعليمي</h3>
+                        <div class="idea-suggestions">
+                            <div class="idea-suggestion">فيديو توضيحي عن علوم الفضاء</div>
+                            <div class="idea-suggestion">كيف تعمل الخوارزميات البسيطة؟</div>
+                            <div class="idea-suggestion">جولة في متحف افتراضي للفن الإسلامي</div>
+                            <div class="idea-suggestion">تاريخ العالم خلال 2 دقيقة</div>
+                        </div>
+                    </div>
+                    <div class="idea-card">
+                        <div class="idea-icon">🏞️</div>
+                        <h3 class="idea-title">الطبيعة والسفر</h3>
+                        <div class="idea-suggestions">
+                            <div class="idea-suggestion">جولة في أجمل الحدائق العربية</div>
+                            <div class="idea-suggestion">رحلة عبر جبال الألب في الشتاء</div>
+                            <div class="idea-suggestion">أعماق المحيط - الشعاب المرجانية</div>
+                            <div class="idea-suggestion">غروب الشمس على شواطئ البحر المتوسط</div>
+                        </div>
+                    </div>
+                    <div class="idea-card">
+                        <div class="idea-icon">🎬</div>
+                        <h3 class="idea-title">محتوى سينمائي</h3>
+                        <div class="idea-suggestions">
+                            <div class="idea-suggestion">مشهد سينمائي لمدينة مستقبلية</div>
+                            <div class="idea-suggestion">تريلر فيلم غموض وتشويق</div>
+                            <div class="idea-suggestion">حكاية قصيرة في الصحراء</div>
+                            <div class="idea-suggestion">تأثيرات بصرية متقدمة للفيديو</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="create-fab">
+        <a href="index.html" class="fab-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M5 12h14"/>
+            </svg>
+            إنشاء فيديو
+        </a>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="explore-script.js"></script>
+</body>
+</html>

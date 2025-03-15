@@ -277,7 +277,9 @@
 <body>
     <div class="header">
         <div class="logo">Salam Hack</div>
-        <button class="toggle-sidebar" id="openSidebar">
+        <a href = "explore.html">
+        <button class="explore" id="explore">استكشاف</button>
+    </a>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="3" y1="12" x2="21" y2="12"></line>
                 <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -287,53 +289,52 @@
     </div>
     
     <div class="main-container">
-        <div class="sidebar" id="sidebar">
-            <h3 class="sidebar-title">
-                خيارات الفيديو
-                <button class="close-sidebar" id="closeSidebar">×</button>
-            </h3>
-            
-            <div class="option-group">
-                <label class="option-label">مدة الفيديو</label>
-                <select class="option-select">
-                    <option value="15">15 ثانية</option>
-                    <option value="30" selected>30 ثانية</option>
-                    <option value="60">60 ثانية</option>
-                    <option value="120">2 دقائق</option>
-                </select>
-            </div>
-            
-            <div class="option-group">
-                <label class="option-label">الدقة</label>
-                <select class="option-select">
-                    <option value="720p">HD (720p)</option>
-                    <option value="1080p" selected>Full HD (1080p)</option>
-                    <option value="4k">4K</option>
-                </select>
-            </div>
-            
-            <div class="option-group">
-                <label class="option-label">الأسلوب</label>
-                <select class="option-select">
-                    <option value="realistic" selected>واقعي</option>
-                    <option value="cartoon">كرتوني</option>
-                    <option value="3d">ثلاثي الأبعاد</option>
-                    <option value="abstract">تجريدي</option>
-                </select>
-            </div>
-            
-            <div class="option-group">
-                <label class="option-label">الموسيقى</label>
-                <select class="option-select">
-                    <option value="none">بدون موسيقى</option>
-                    <option value="ambient" selected>هادئة</option>
-                    <option value="upbeat">حماسية</option>
-                    <option value="dramatic">درامية</option>
-                </select>
-            </div>
-        </div>
-        
         <div class="content">
+            <div class="sidebar" id="sidebar">
+                <h3 class="sidebar-title">
+                    خيارات الفيديو
+                    <button class="close-sidebar" id="closeSidebar">×</button>
+                </h3>
+                
+                <div class="option-group">
+                    <label class="option-label">مدة الفيديو</label>
+                    <select class="option-select">
+                        <option value="15">15 ثانية</option>
+                        <option value="30" selected>30 ثانية</option>
+                        <option value="60">60 ثانية</option>
+                        <option value="120">2 دقائق</option>
+                    </select>
+                </div>
+                
+                <div class="option-group">
+                    <label class="option-label">الدقة</label>
+                    <select class="option-select">
+                        <option value="720p">HD (720p)</option>
+                        <option value="1080p" selected>Full HD (1080p)</option>
+                        <option value="4k">4K</option>
+                    </select>
+                </div>
+                
+                <div class="option-group">
+                    <label class="option-label">الأسلوب</label>
+                    <select class="option-select">
+                        <option value="realistic" selected>واقعي</option>
+                        <option value="cartoon">كرتوني</option>
+                        <option value="3d">ثلاثي الأبعاد</option>
+                        <option value="abstract">تجريدي</option>
+                    </select>
+                </div>
+                
+                <div class="option-group">
+                    <label class="option-label">الموسيقى</label>
+                    <select class="option-select">
+                        <option value="none">بدون موسيقى</option>
+                        <option value="ambient" selected>هادئة</option>
+                        <option value="upbeat">حماسية</option>
+                        <option value="dramatic">درامية</option>
+                    </select>
+                </div>
+            </div>
             <div class="sample-prompts">
                 <div class="sample-prompt">مشهد طبيعي</div>
                 <div class="sample-prompt">فيديو تعليمي</div>

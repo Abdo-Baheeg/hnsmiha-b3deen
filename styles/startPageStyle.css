@@ -4,6 +4,19 @@
     font-family: "Vazirmatn", sans-serif;
 }
 
+.body {
+    background-image:url ('Assets/background1.svg');
+    font-family: "Vazirmatn", sans-serif;  
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
 /* Start Page Styles - Scoped under .startPage */
 
 
