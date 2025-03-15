@@ -10,35 +10,51 @@
     <div class="startPage">
         <h2>اختر الفئة:</h2>
         <div class="categories">
-            <div class="category">
+            <!-- أطفال -->
+            <div class="category" onclick="selectCategory(1)">
                 <img src="Assets/children.jpg" alt="أطفال">
-                <div class="overlay"></div>
-                <div class="text">
+                <div class="overlay" style="background: linear-gradient(to top, rgba(128, 0, 255, 0.5), transparent);"></div>
+                <div class="text" style="background-color: purple;"> 
                     <h3>أطفال</h3>
                     <p>من 6 إلى 12 عام</p>
                 </div>
             </div>
-            <div class="category">
+
+            <!-- مراهقين -->
+            <div class="category" onclick="selectCategory(2)">
                 <img src="Assets/children.jpg" alt="مراهقين">
-                <div class="overlay"></div>
-                <div class="text">
+                <div class="overlay" style="background: linear-gradient(to top, rgba(255, 165, 0, 0.5), transparent);"></div>
+                <div class="text" style="background-color: orange;"> 
                     <h3>مراهقين</h3>
                     <p>من 13 إلى 18 عام</p>
                 </div>
             </div>
-            <div class="category">
+
+            <!-- راشدين -->
+            <div class="category" onclick="selectCategory(3)">
                 <img src="Assets/children.jpg" alt="راشدين">
-                <div class="overlay"></div>
-                <div class="text">
+                <div class="overlay" style="background: linear-gradient(to top, rgba(255, 0, 0, 0.5), transparent);"></div>
+                <div class="text" style="background-color: red;"> 
                     <h3>راشدين</h3>
                     <p>أكبر من 18</p>
                 </div>
             </div>
         </div>
+
         <div class="navigation">
-            <button class="prev">&#8592;</button>
-            <button class="next">&#8594;</button>
+            <button class="prev">&#8594;</button>
+            <button class="next">&#8592;</button>
         </div>
     </div>
+
+    <script>
+        function selectCategory(categoryId) {
+            // Store the category selection in localStorage
+            localStorage.setItem('selectedCategory', categoryId);
+            
+            // Redirect to main.html
+            window.location.href = "main.html";
+        }
+    </script>
 </body>
 </html>
