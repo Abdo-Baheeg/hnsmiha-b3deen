@@ -18,19 +18,20 @@
 
 /* Centered and enlarged title */
 .startPage h2 {
+   margin-right: 100px;
     font-size: 36px; /* Bigger title */
     font-weight: bold;
     margin-bottom: 30px;
     color: #333;
-    text-align: center;
+    text-align: right;
     position: relative;
 }
 
 /* Navigation Arrows */
 .startPage .navigation {
     position: absolute;
-    top: 10px;
-    left: 20px;
+    top: 30px;
+    left: 50px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -40,7 +41,7 @@
 .startPage .prev,
 .startPage .next {
     border: none;
-    background-color: #6a0dad; /* Purple */
+    background-color: grey; /* Purple */
     color: white;
     padding: 12px;
     font-size: 18px;
@@ -48,10 +49,16 @@
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
 }
+.startPage .prev
+{
+    background-color: rgb(53, 140, 233); /* Purple */
+
+
+}
 
 /* Flip the arrows */
 .startPage .prev {
-    transform: rotate(180deg);
+   
 }
 .startPage .next {
     transform: rotate(0deg);
@@ -60,17 +67,17 @@
 /* Hover effect */
 .startPage .prev:hover,
 .startPage .next:hover {
-    background-color: #5b0ca3;
-    transform: scale(1.1);
+    background-color: #51a0f5;
+    transform: scale(1.15);
 }
 
 /* Categories container */
 .startPage .categories {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 /* Category card */
@@ -123,7 +130,7 @@
     text-align: center;
     padding: 6px 10px; /* Smaller padding */
     border-radius: 25px;
-    width: 65%; /* Smaller button */
+    width: 55%; /* Smaller button */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
     z-index: 2; /* Ensures visibility */
 }
