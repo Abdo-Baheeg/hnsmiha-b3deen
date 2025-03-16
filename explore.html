@@ -5,80 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>استكشاف - Salam Hack</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="explore-styles.css">
+    <link rel="stylesheet" href="styles/explore-styles.css">
 </head>
 <body>
     <div class="header">
-        <div class="logo">Salam Hack</div>
-        <div class="nav-links">
-            <a href="index.html" class="nav-link">الرئيسية</a>
-            <a href="explore.html" class="nav-link active">استكشاف</a>
-        </div>
-        <button class="toggle-sidebar" id="openSidebar">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-        </button>
+        <h2 class="logo">Salam Hack</h2>
+        <a href="index.html" class="nav-link">
+            <button id = "main-btn">الرئيسية
+                <img width="20" height="20" src="assets/home.png" alt="Home">
+            </button>
+        </a>
     </div>
-    
-    <div class="overlay" id="overlay"></div>
-    
+
     <div class="main-container">
-        <div class="sidebar" id="sidebar">
-            <h3 class="sidebar-title">
-                تصفية النتائج
-                <button class="close-sidebar" id="closeSidebar">×</button>
-            </h3>
-            
-            <div class="option-group">
-                <label class="option-label">نوع المحتوى</label>
-                <select class="option-select">
-                    <option value="all" selected>الكل</option>
-                    <option value="educational">تعليمي</option>
-                    <option value="nature">طبيعة</option>
-                    <option value="social">سوشيال ميديا</option>
-                    <option value="cinematic">سينمائي</option>
-                    <option value="animation">رسوم متحركة</option>
-                </select>
-            </div>
-            
-            <div class="option-group">
-                <label class="option-label">المدة</label>
-                <select class="option-select">
-                    <option value="all" selected>الكل</option>
-                    <option value="short">قصير (> 30 ثانية)</option>
-                    <option value="medium">متوسط (30-60 ثانية)</option>
-                    <option value="long">طويل (< 60 ثانية)</option>
-                </select>
-            </div>
-            
-            <div class="option-group">
-                <label class="option-label">الأسلوب</label>
-                <select class="option-select">
-                    <option value="all" selected>الكل</option>
-                    <option value="realistic">واقعي</option>
-                    <option value="cartoon">كرتوني</option>
-                    <option value="3d">ثلاثي الأبعاد</option>
-                    <option value="abstract">تجريدي</option>
-                    <option value="anime">أنمي</option>
-                    <option value="cinematic">سينمائي</option>
-                </select>
-            </div>
-            
-            <div class="option-group">
-                <label class="option-label">الترتيب حسب</label>
-                <select class="option-select">
-                    <option value="newest" selected>الأحدث</option>
-                    <option value="popular">الأكثر شعبية</option>
-                    <option value="trending">الأكثر رواجًا</option>
-                </select>
-            </div>
-            
-            <button class="filter-btn">تطبيق الفلترة</button>
-        </div>
-        
         <div class="content">
             <div class="explore-header">
                 <h1 class="explore-title">استكشاف الفيديوهات</h1>
@@ -242,23 +181,14 @@
                             <div class="idea-suggestion">غروب الشمس على شواطئ البحر المتوسط</div>
                         </div>
                     </div>
-                    <div class="idea-card">
-                        <div class="idea-icon">🎬</div>
-                        <h3 class="idea-title">محتوى سينمائي</h3>
-                        <div class="idea-suggestions">
-                            <div class="idea-suggestion">مشهد سينمائي لمدينة مستقبلية</div>
-                            <div class="idea-suggestion">تريلر فيلم غموض وتشويق</div>
-                            <div class="idea-suggestion">حكاية قصيرة في الصحراء</div>
-                            <div class="idea-suggestion">تأثيرات بصرية متقدمة للفيديو</div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
     
     <div class="create-fab">
-        <a href="index.html" class="fab-button">
+        <a href="main.html" class="fab-button">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 5v14M5 12h14"/>
             </svg>
@@ -266,7 +196,6 @@
         </a>
     </div>
     
-    <script src="script.js"></script>
-    <script src="explore-script.js"></script>
+    <script src="scripts/explore-script.js"></script>
 </body>
 </html>

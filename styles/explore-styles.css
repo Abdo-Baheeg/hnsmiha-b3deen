@@ -1,27 +1,40 @@
 /* Explore Page Specific Styles */
 
 /* Navigation */
-.nav-links {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+}
+.header {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
 }
 
-.nav-link {
-    color: #666;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #343a40;
 }
 
-.nav-link:hover {
-    color: #3498db;
+.header .logo {
+    font-size: 18px;
+    color: #6c757d;
+    margin: 0;
 }
-
-.nav-link.active {
-    color: #3498db;
-    font-weight: 600;
+.header #main-btn {
+    color:black;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 /* Explore Header */
 .explore-header {
     margin-bottom: 30px;
